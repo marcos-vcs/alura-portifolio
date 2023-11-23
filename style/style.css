@@ -28,7 +28,7 @@ body{
 }
 .cabecalho__menu{
     display: flex;
-    gap: 60px;
+    gap: 20px;
 }
 .menu__link{
     font-family: var(--fonte-secundaria);
@@ -44,7 +44,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 0px 35px;
 }
 
 .destaque-azul{
@@ -52,22 +51,22 @@ body{
 }
 
 .conteudo{
-    width: 520px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 .conteudo__titulo{
     font-family: var(--fonte-primaria);
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 .conteudo__paragrafo{
     text-align: justify;
     font-family: var(--fonte-secundaria);
-    font-size: 16px;
+    font-size: 1rem;
 }
 
-#foto-perfil{
+.foto-perfil{
     width: 35%;
 }
 
@@ -90,11 +89,11 @@ body{
     justify-content: center;
     align-items:end;
     gap: 10px;
-    width: 250px;
+    width: 50%;
     text-align: center;
     border-radius: 8px;
     padding: 10px 0 18px 0;
-    font-size: 18px;
+    font-size: 1.12rem;
     color: var(--cor_secundaria);
     border: 2px solid var(--cor-terciaria);
     text-decoration: none;
@@ -113,4 +112,26 @@ body{
     background-color: var(--cor-terciaria);
     font-family: var(--fonte-secundaria);
     font-size: 18px;
+}
+
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 10%;
+
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .container{
+        flex-direction: column-reverse;
+        padding: 5%;
+        gap: 15px;
+    }
+    .conteudo{
+        gap: 15px;
+        width: auto;
+    }
+    .foto-perfil{
+        width: 50%;
+    }
 }
